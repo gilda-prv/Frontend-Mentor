@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 15px;
+}
+.container {
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 700px;
+}
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px 40px;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card1 h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.card1 p {
+  margin-top: 23px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+}
+.card1 button {
+  margin-top: 56px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 11px;
+  color: hsl(31, 77%, 52%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.card1 button:hover {
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 40px 40px;
+  text-align: left;
+}
+.card2 h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.card2 p {
+  margin-top: 23px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+}
+.card2 button {
+  margin-top: 56px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 11px;
+  color: hsl(184, 100%, 22%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.card2 button:hover {
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 40px 40px;
+  text-align: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card3 h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.card3 p {
+  margin-top: 23px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+}
+.card3 button {
+  margin-top: 56px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 11px;
+  color: hsl(179, 100%, 13%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.card3 button:hover {
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  margin-left: 3px;
+}
+@media only screen and (max-width: 426px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card1 {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    text-align: left;
+  }
+  .card1 p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .card2 p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .card3 {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    text-align: left;
+  }
+  .card3 p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .attribution {
+    position: absolute;
+    bottom: -100%;
+  }
+}
